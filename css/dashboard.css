@@ -1,0 +1,576 @@
+/* ==========================================
+   GOOGLE FONT & GLOBAL STYLES
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    background:#FFF8E7;
+    color:#333;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:260px;
+    height:100vh;
+    background:#6D4C41;
+    color:#fff;
+    padding:30px 20px;
+    overflow-y:auto;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    display:flex;
+    align-items:center;
+    padding:15px 18px;
+    margin-bottom:12px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:all .3s ease;
+    font-size:16px;
+    font-weight:500;
+}
+
+.sidebar ul li i{
+    width:28px;
+    font-size:18px;
+    margin-right:10px;
+}
+
+.sidebar ul li:hover{
+    background:#FFD54F;
+    color:#4E342E;
+    transform:translateX(6px);
+}
+
+.sidebar ul li.active{
+    background:#FFD54F;
+    color:#4E342E;
+    font-weight:600;
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:35px;
+    min-height:100vh;
+    animation:fadeIn .6s ease;
+}
+
+.main-content h1{
+    color:#5D4037;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.main-content p{
+    color:#777;
+    font-size:15px;
+}
+
+/* ==========================================
+   TOP BAR
+========================================== */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.search-box{
+    position:relative;
+}
+
+.search-box input{
+    width:340px;
+    padding:14px 20px;
+    padding-right:45px;
+    border:none;
+    outline:none;
+    border-radius:30px;
+    background:#fff;
+    font-size:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.search-box i{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#888;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile i{
+    font-size:22px;
+    color:#6D4C41;
+    cursor:pointer;
+}
+
+.profile img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #FFD54F;
+}
+
+.profile h4{
+    color:#4E342E;
+    font-size:16px;
+}
+
+.profile small{
+    color:#777;
+}
+/* ==========================================
+   DASHBOARD CARDS
+========================================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    border-left:6px solid #FFD54F;
+    box-shadow:0 12px 25px rgba(0,0,0,0.08);
+    transition:all .3s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.card h3{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#5D4037;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.card h3 i{
+    font-size:24px;
+    color:#FFD54F;
+}
+
+.card h1{
+    font-size:40px;
+    color:#333;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:15px;
+    font-weight:600;
+    line-height:24px;
+}
+
+/* ==========================================
+   OVERVIEW SECTION
+========================================== */
+
+.overview{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+.attendance-card,
+.academic-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.attendance-card h2,
+.academic-card h2{
+    color:#5D4037;
+    margin-bottom:25px;
+    font-size:22px;
+}
+
+.progress-circle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:30px 0;
+}
+
+.circle{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:10px solid #FFD54F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#FFFDF5;
+    font-size:32px;
+    font-weight:700;
+    color:#4E342E;
+}
+
+/* ==========================================
+   ACADEMIC SUMMARY TABLE
+========================================== */
+
+.academic-card table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    border:1px solid #ececec;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.academic-card tr{
+    border-bottom:1px solid #ececec;
+}
+
+.academic-card tr:last-child{
+    border-bottom:none;
+}
+
+.academic-card td{
+    padding:18px;
+    font-size:15px;
+}
+
+.academic-card td:first-child{
+    font-weight:600;
+    color:#555;
+    width:60%;
+}
+
+.academic-card td:last-child{
+    text-align:right;
+    font-weight:500;
+    color:#333;
+}
+/* ==========================================
+   BOTTOM SECTION
+========================================== */
+
+.bottom-section{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+/* ==========================================
+   TIMETABLE
+========================================== */
+
+.timetable{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.timetable h2{
+    color:#5D4037;
+    margin-bottom:25px;
+    font-size:22px;
+}
+
+/* Timetable Table */
+
+.timetable table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #e6e6e6;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.timetable th{
+    background:#FFD54F;
+    color:#4E342E;
+    padding:18px;
+    font-size:16px;
+    text-align:left;
+}
+
+.timetable td{
+    padding:18px;
+    font-size:15px;
+    border:1px solid #ececec;
+}
+
+.timetable tr:nth-child(even){
+    background:#FFFDF8;
+}
+
+.timetable tr:hover{
+    background:#FFF4CC;
+    transition:.3s;
+}
+
+/* ==========================================
+   ANNOUNCEMENTS
+========================================== */
+
+.announcement{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+}
+
+.announcement h2{
+    color:#5D4037;
+    margin-bottom:25px;
+    font-size:22px;
+}
+
+.announcement ul{
+    list-style:none;
+}
+
+.announcement li{
+    background:#FFFDF8;
+    border-left:5px solid #FFD54F;
+    padding:16px 18px;
+    margin-bottom:15px;
+    border-radius:10px;
+    line-height:26px;
+    transition:.3s;
+}
+
+.announcement li:hover{
+    transform:translateX(5px);
+    background:#FFF4CC;
+}
+
+/* ==========================================
+   COMMON TABLE STYLE
+========================================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#FFD54F;
+    color:#4E342E;
+}
+
+td{
+    padding:16px;
+}
+/* ==========================================
+   STUDENT PROFILE
+========================================== */
+
+.profile-section{
+    margin-top:40px;
+}
+
+.student-profile{
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 12px 25px rgba(0,0,0,0.08);
+}
+
+.student-profile img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #FFD54F;
+    margin-bottom:20px;
+}
+
+.student-profile h2{
+    color:#5D4037;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.student-profile p{
+    color:#666;
+    margin-bottom:25px;
+    font-size:16px;
+}
+
+.student-profile table{
+    width:100%;
+    max-width:650px;
+    margin:0 auto;
+    border-collapse:collapse;
+    border:1px solid #e8e8e8;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.student-profile tr{
+    border-bottom:1px solid #ececec;
+}
+
+.student-profile tr:last-child{
+    border-bottom:none;
+}
+
+.student-profile td{
+    padding:18px;
+    font-size:15px;
+}
+
+.student-profile td:first-child{
+    width:35%;
+    font-weight:600;
+    background:#FFF8E7;
+    color:#5D4037;
+}
+
+.student-profile td:last-child{
+    color:#333;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .main-content{
+        margin-left:0;
+        width:100%;
+        padding:20px;
+    }
+
+    .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .overview{
+        grid-template-columns:1fr;
+    }
+
+    .bottom-section{
+        grid-template-columns:1fr;
+    }
+
+    .profile{
+        width:100%;
+        justify-content:flex-end;
+    }
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#b0b0b0;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#888;
+}
+
+/* ==========================================
+   FADE ANIMATION
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}

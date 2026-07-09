@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Events</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/manage_events.css">
+
+</head>
+
+
+<body>
+
+
+<div class="page-container">
+
+
+    <!-- Header -->
+
+    <header class="page-header">
+
+        <div>
+            <h1>Manage Events</h1>
+            <p>Create and manage student activities</p>
+        </div>
+
+
+        <button class="add-event-btn">
+            <i class="fas fa-plus"></i>
+            Add Event
+        </button>
+
+
+    </header>
+
+
+
+    <!-- Event Table -->
+
+
+    <section class="event-section">
+
+
+        <table>
+
+
+            <thead>
+
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                    <th>Participants</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+
+            </thead>
+
+
+
+            <tbody>
+
+
+                <tr>
+
+                    <td>Hackathon</td>
+                    <td>15 July 2026</td>
+                    <td>Seminar Hall</td>
+                    <td>85</td>
+                    <td>
+                        <span class="status open">
+                            Open
+                        </span>
+                    </td>
+
+                    <td>
+
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+
+                    </td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td>Robotics Workshop</td>
+                    <td>22 July 2026</td>
+                    <td>Lab 3</td>
+                    <td>60</td>
+
+                    <td>
+                        <span class="status upcoming">
+                            Upcoming
+                        </span>
+                    </td>
+
+
+                    <td>
+
+                        <button class="edit-btn">
+                            Edit
+                        </button>
+
+
+                        <button class="delete-btn">
+                            Delete
+                        </button>
+
+                    </td>
+
+
+                </tr>
+
+
+            </tbody>
+
+
+        </table>
+
+
+    </section>
+
+
+</div>
+
+
+<script src="../js/manage_events.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+/* ===========================
+   Registrations CSS
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fc;
+    color: #333;
+
+}
+
+
+.page-container {
+
+    padding: 30px;
+
+    min-height: 100vh;
+
+}
+
+
+
+/* ===========================
+   Header
+=========================== */
+
+
+.page-header {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+
+}
+
+
+
+.page-header h1 {
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+}
+
+
+
+.page-header p {
+
+    color: #777;
+
+    margin-top: 5px;
+
+}
+
+
+/* ===========================
+   Table Section
+=========================== */
+
+.registration-section {
+
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+
+    overflow-x: auto;
+
+}
+
+
+table {
+
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+
+}
+
+
+thead tr {
+
+    background: #f8fafc;
+
+}
+
+
+th {
+
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+
+}
+
+
+
+tbody tr {
+
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+    border-radius: 12px;
+
+}
+
+
+td {
+
+    padding: 18px 16px;
+    font-size: 14px;
+    color: #444;
+
+}
+
+
+td:first-child {
+
+    border-radius: 12px 0 0 12px;
+
+}
+
+
+td:last-child {
+
+    border-radius: 0 12px 12px 0;
+
+}
+
+
+tbody tr:hover {
+
+    transform: translateY(-2px);
+    transition: 0.3s;
+    background: #f9fbff;
+
+}
+
+
+/* ===========================
+   Status Labels
+=========================== */
+
+
+.status {
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+}
+
+
+
+.pending {
+
+    background: #fef3c7;
+
+    color: #d97706;
+
+}
+
+
+
+.approved {
+
+    background: #dcfce7;
+
+    color: #16a34a;
+
+}
+
+/* ===========================
+   Action Buttons
+=========================== */
+
+.approve-btn,
+.reject-btn {
+
+    border: none;
+
+    padding: 9px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    margin: 4px;
+
+    transition: 0.3s;
+
+}
+
+
+.approve-btn {
+
+    background: #22c55e;
+
+    color: white;
+
+}
+
+
+
+.reject-btn {
+
+    background: #ef4444;
+
+    color: white;
+
+}
+
+
+
+.approve-btn:hover,
+.reject-btn:hover {
+
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:700px){
+
+
+    .registration-section {
+
+        overflow-x:auto;
+
+    }
+
+
+    table {
+
+        min-width:750px;
+
+    }
+
+}
+.rejected {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+}

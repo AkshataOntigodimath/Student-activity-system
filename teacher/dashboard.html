@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/teacher_dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>SAMS</h2>
+                <p>Teacher Panel</p>
+            </div>
+
+            <ul class="menu">
+
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manage_events.html">
+                        <i class="fas fa-calendar-plus"></i>
+                        Manage Events
+                    </a>
+                </li>
+
+                <li>
+                    <a href="registrations.html">
+                        <i class="fas fa-user-check"></i>
+                        Registrations
+                    </a>
+                </li>
+
+                <li>
+                    <a href="attendance.html">
+                        <i class="fas fa-clipboard-check"></i>
+                        Attendance
+                    </a>
+                </li>
+
+                <li>
+                    <a href="certificates.html">
+                        <i class="fas fa-award"></i>
+                        Certificates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reports.html">
+                        <i class="fas fa-chart-line"></i>
+                        Reports
+                    </a>
+                </li>
+
+                <li>
+                    <a href="teacher_profile.html">
+                        <i class="fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navigation -->
+            <header class="topbar">
+
+                <div class="welcome">
+                    <h2>Welcome, Teacher 👋</h2>
+                    <p>Manage student activities efficiently.</p>
+                </div>
+
+                <div class="topbar-right">
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </button>
+
+                    <div class="profile-section">
+                        <img src="../images/teacher.jpg" alt="Teacher">
+                        <span>Teacher</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- Dashboard Cards -->
+
+            <section class="cards">
+
+                <div class="card">
+                    <div class="card-icon blue">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Total Events</h3>
+                        <h2>18</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon green">
+                        <i class="fas fa-users"></i>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Registered Students</h3>
+                        <h2>326</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon orange">
+                        <i class="fas fa-user-clock"></i>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Pending Approvals</h3>
+                        <h2>27</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon purple">
+                        <i class="fas fa-award"></i>
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Certificates Issued</h3>
+                        <h2>145</h2>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Dashboard Content -->
+
+            <section class="dashboard-content">
+
+                <!-- Recent Activities -->
+
+                <div class="recent-activities">
+
+                    <div class="section-header">
+                        <h2>Recent Activities</h2>
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            <i class="fas fa-user-plus"></i>
+                            Student <strong>Rahul</strong> registered for Hackathon.
+                        </li>
+
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Attendance submitted for Web Development Workshop.
+                        </li>
+
+                        <li>
+                            <i class="fas fa-calendar-plus"></i>
+                            New event <strong>AI Bootcamp</strong> created successfully.
+                        </li>
+
+                        <li>
+                            <i class="fas fa-award"></i>
+                            Certificates generated for Coding Contest.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Upcoming Events -->
+
+                <div class="upcoming-events">
+
+                    <div class="section-header">
+                        <h2>Upcoming Events</h2>
+                    </div>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Event</th>
+                                <th>Date</th>
+                                <th>Venue</th>
+                                <th>Students</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Hackathon</td>
+                                <td>15 Jul 2026</td>
+                                <td>Seminar Hall</td>
+                                <td>85</td>
+                                <td><span class="status upcoming">Upcoming</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Robotics Workshop</td>
+                                <td>22 Jul 2026</td>
+                                <td>Lab 3</td>
+                                <td>60</td>
+                                <td><span class="status open">Open</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Technical Quiz</td>
+                                <td>30 Jul 2026</td>
+                                <td>Auditorium</td>
+                                <td>120</td>
+                                <td><span class="status closed">Closed</span></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- Quick Actions -->
+
+                <div class="quick-actions">
+
+                    <div class="section-header">
+                        <h2>Quick Actions</h2>
+                    </div>
+
+                    <div class="action-buttons">
+
+                        <button class="action-btn">
+                            <i class="fas fa-plus-circle"></i>
+                            Create Event
+                        </button>
+
+                        <button class="action-btn">
+                            <i class="fas fa-user-check"></i>
+                            Approve Registrations
+                        </button>
+
+                        <button class="action-btn">
+                            <i class="fas fa-clipboard-check"></i>
+                            Take Attendance
+                        </button>
+
+                        <button class="action-btn">
+                            <i class="fas fa-award"></i>
+                            Generate Certificates
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+
+            <footer class="footer">
+                © 2026 Student Activity Management System | Teacher Dashboard
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="../js/teacher_dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>SAS</h2>
+
+    <ul>
+
+        <li class="active" onclick="location.href='dashboard.html'">
+            <i class="fa-solid fa-house"></i> Dashboard
+        </li>
+
+        <li onclick="location.href='profile.html'">
+            <i class="fa-solid fa-user"></i> Profile
+        </li>
+
+        <li onclick="location.href='attendance.html'">
+            <i class="fa-solid fa-calendar-check"></i> Attendance
+        </li>
+
+        <li onclick="location.href='subjects.html'">
+            <i class="fa-solid fa-book"></i> Subjects
+        </li>
+
+        <li onclick="location.href='assignments.html'">
+            <i class="fa-solid fa-file"></i> Assignments
+        </li>
+
+        <li onclick="location.href='marks.html'">
+            <i class="fa-solid fa-chart-column"></i> Marks
+        </li>
+
+        <li onclick="location.href='activities.html'">
+            <i class="fa-solid fa-medal"></i> Activities
+        </li>
+
+        <li onclick="location.href='announcements.html'">
+            <i class="fa-solid fa-bullhorn"></i> Announcements
+        </li>
+
+        <li onclick="location.href='settings.html'">
+            <i class="fa-solid fa-gear"></i> Settings
+        </li>
+
+        <li onclick="location.href='../login.html'">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <div class="topbar">
+
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="profile">
+
+            <i class="fa-solid fa-bell"></i>
+
+            <img src="../images/student.jpg" alt="Student">
+
+            <div>
+                <h4>Akshata</h4>
+                <small>ECE Student</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h1>Welcome, Akshata 👋</h1>
+    <p>Here's your academic overview.</p>
+
+    <div class="cards">
+
+        <div class="card" onclick="location.href='attendance.html'">
+
+            <h3>
+                <i class="fa-solid fa-calendar-check"></i>
+                Attendance
+            </h3>
+
+            <h1>92%</h1>
+
+            <p style="color:green;font-weight:600;">
+                Excellent Attendance
+            </p>
+
+        </div>
+
+        <div class="card" onclick="location.href='assignments.html'">
+
+            <h3>
+                <i class="fa-solid fa-file-circle-check"></i>
+                Assignments
+            </h3>
+
+            <h1>08</h1>
+
+            <p style="color:#ff9800;font-weight:600;">
+                2 Pending
+            </p>
+
+        </div>
+
+        <div class="card" onclick="location.href='subjects.html'">
+
+            <h3>
+                <i class="fa-solid fa-book-open"></i>
+                Subjects
+            </h3>
+
+            <h1>06</h1>
+
+            <p style="color:#2196f3;font-weight:600;">
+                Current Semester
+            </p>
+
+        </div>
+
+        <div class="card" onclick="location.href='marks.html'">
+
+            <h3>
+                <i class="fa-solid fa-graduation-cap"></i>
+                CGPA
+            </h3>
+
+            <h1>8.96</h1>
+
+            <p style="color:#4caf50;font-weight:600;">
+                Very Good
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="overview">
+        <div class="attendance-card">
+
+        <h2>Attendance Overview</h2>
+
+        <div class="progress-circle">
+            <div class="circle">
+                <span>92%</span>
+            </div>
+        </div>
+
+        <p>Excellent! Keep maintaining above 90% attendance.</p>
+
+    </div>
+
+    <div class="academic-card">
+
+        <h2>Academic Summary</h2>
+
+        <table>
+
+            <tr>
+                <td>Current Semester</td>
+                <td>6th</td>
+            </tr>
+
+            <tr>
+                <td>Department</td>
+                <td>Electronics & Communication</td>
+            </tr>
+
+            <tr>
+                <td>CGPA</td>
+                <td>8.96</td>
+            </tr>
+
+            <tr>
+                <td>Credits Earned</td>
+                <td>118</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="bottom-section">
+
+    <div class="timetable">
+
+        <h2>Today's Timetable</h2>
+
+        <table>
+
+            <tr>
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td>Embedded Systems</td>
+            </tr>
+
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>IoT</td>
+            </tr>
+
+            <tr>
+                <td>11:30 - 12:30</td>
+                <td>VLSI Design</td>
+            </tr>
+
+            <tr>
+                <td>02:00 - 03:00</td>
+                <td>Machine Learning</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="announcement">
+
+        <h2>Latest Announcements</h2>
+
+        <ul>
+            <li>📢 Internal Exam starts from 20th July.</li>
+            <li>📢 IoT Workshop Registration is Open.</li>
+            <li>📢 Project Review on Friday.</li>
+            <li>📢 Cultural Fest registrations close tomorrow.</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="profile-section">
+
+    <div class="student-profile">
+
+        <img src="../images/student.jpg" alt="Student">
+
+        <h2>Akshata R. O.</h2>
+
+        <p>Electronics & Communication Engineering</p>
+
+        <table>
+
+            <tr>
+                <td><strong>USN</strong></td>
+                <td>01JEC22EC001</td>
+            </tr>
+
+            <tr>
+                <td><strong>Semester</strong></td>
+                <td>6th</td>
+            </tr>
+
+            <tr>
+                <td><strong>Email</strong></td>
+                <td>akshata@email.com</td>
+            </tr>
+
+            <tr>
+                <td><strong>Phone</strong></td>
+                <td>+91 9876543210</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
