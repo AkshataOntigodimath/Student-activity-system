@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#FFF8E7;
+    padding:30px;
+}
+
+.page-container{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.top-bar h1{
+    color:#5D4037;
+}
+
+.download-btn,
+.print-btn{
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    color:#fff;
+    font-weight:600;
+    margin-left:10px;
+    transition:.3s;
+}
+
+.download-btn{
+    background:#2E7D32;
+}
+
+.print-btn{
+    background:#8D6E63;
+}
+
+.download-btn:hover,
+.print-btn:hover{
+    transform:translateY(-2px);
+}
+
+.certificate{
+    background:#FFFDF7;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.border{
+    border:8px solid #8D6E63;
+    padding:60px 40px;
+    text-align:center;
+    border-radius:12px;
+}
+
+.border h3{
+    color:#8D6E63;
+    letter-spacing:3px;
+    margin-bottom:25px;
+}
+
+.border h1{
+    color:#5D4037;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.text{
+    font-size:20px;
+    color:#6D4C41;
+    margin:20px 0;
+}
+
+#studentName{
+    font-size:40px;
+    color:#A0522D;
+    margin:20px 0;
+    font-family:Georgia,serif;
+}
+
+#eventName{
+    font-size:30px;
+    color:#8D6E63;
+    margin:20px 0;
+}
+
+.footer{
+    margin-top:70px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer div{
+    width:220px;
+    text-align:center;
+}
+
+.footer hr{
+    border:1px solid #5D4037;
+    margin-bottom:10px;
+}
+
+.footer p{
+    color:#5D4037;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+
+.top-bar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.border{
+    padding:35px 20px;
+}
+
+.border h1{
+    font-size:28px;
+}
+
+#studentName{
+    font-size:30px;
+}
+
+#eventName{
+    font-size:24px;
+}
+
+.footer{
+    flex-direction:column;
+    gap:40px;
+    align-items:center;
+}
+
+}

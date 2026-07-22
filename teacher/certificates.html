@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registrations</title>
+    <title>Certificates</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/teacher_registrations.css">
+    <link rel="stylesheet" href="../css/teacher_certificates.css">
 </head>
 
 <body>
@@ -20,43 +20,41 @@
     <div class="page-header">
 
         <div>
-            <h1>Student Registrations</h1>
-            <p>Manage all student event registrations</p>
+            <h1>Certificates</h1>
+            <p>Generate and manage student certificates</p>
         </div>
 
-        <button class="export-btn">
-            Export Report
+        <button class="generate-all-btn">
+            Generate All
         </button>
 
     </div>
-
 
     <!-- Statistics -->
 
     <div class="stats-container">
 
         <div class="stat-card">
-            <h4>Total</h4>
-            <h2>150</h2>
+            <h4>Total Certificates</h4>
+            <h2>120</h2>
         </div>
 
-        <div class="stat-card pending-card">
+        <div class="stat-card">
+            <h4>Generated</h4>
+            <h2>105</h2>
+        </div>
+
+        <div class="stat-card">
             <h4>Pending</h4>
-            <h2>20</h2>
-        </div>
-
-        <div class="stat-card approved-card">
-            <h4>Approved</h4>
-            <h2>115</h2>
-        </div>
-
-        <div class="stat-card rejected-card">
-            <h4>Rejected</h4>
             <h2>15</h2>
         </div>
 
-    </div>
+        <div class="stat-card">
+            <h4>Downloaded</h4>
+            <h2>82</h2>
+        </div>
 
+    </div>
 
     <!-- Search -->
 
@@ -65,7 +63,7 @@
         <input
             type="text"
             id="searchInput"
-            placeholder="Search student..."
+            placeholder="Search Student..."
         >
 
         <select id="eventFilter">
@@ -78,7 +76,6 @@
         </select>
 
     </div>
-
 
     <!-- Table -->
 
@@ -93,14 +90,12 @@
                     <th>Student</th>
                     <th>USN</th>
                     <th>Event</th>
-                    <th>Date</th>
                     <th>Status</th>
                     <th>Actions</th>
 
                 </tr>
 
             </thead>
-
 
             <tbody>
 
@@ -109,7 +104,32 @@
                     <td>Rahul Kumar</td>
                     <td>4XX22EC001</td>
                     <td>Hackathon</td>
-                    <td>12 Jul 2026</td>
+
+                    <td>
+                        <span class="status generated">
+                            Generated
+                        </span>
+                    </td>
+
+                    <td>
+
+                        <button class="view-btn">
+                            View
+                        </button>
+
+                        <button class="download-btn">
+                            Download
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Ananya Sharma</td>
+                    <td>4XX22EC002</td>
+                    <td>Workshop</td>
 
                     <td>
                         <span class="status pending">
@@ -119,82 +139,38 @@
 
                     <td>
 
-                        <button class="approve-btn">
-                            Approve
+                        <button class="generate-btn">
+                            Generate
                         </button>
 
-                        <button class="reject-btn">
-                            Reject
-                        </button>
-
-                        <button class="view-btn">
-                            View
+                        <button class="download-btn">
+                            Download
                         </button>
 
                     </td>
 
                 </tr>
-
-
-
-                <tr>
-
-                    <td>Ananya Sharma</td>
-                    <td>4XX22EC002</td>
-                    <td>Workshop</td>
-                    <td>15 Jul 2026</td>
-
-                    <td>
-                        <span class="status approved">
-                            Approved
-                        </span>
-                    </td>
-
-                    <td>
-
-                        <button class="approve-btn">
-                            Approve
-                        </button>
-
-                        <button class="reject-btn">
-                            Reject
-                        </button>
-
-                        <button class="view-btn">
-                            View
-                        </button>
-
-                    </td>
-
-                </tr>
-
-
 
                 <tr>
 
                     <td>Akash Patil</td>
                     <td>4XX22EC003</td>
                     <td>Coding Contest</td>
-                    <td>20 Jul 2026</td>
 
                     <td>
-                        <span class="status rejected">
-                            Rejected
+                        <span class="status generated">
+                            Generated
                         </span>
                     </td>
 
                     <td>
 
-                        <button class="approve-btn">
-                            Approve
-                        </button>
-
-                        <button class="reject-btn">
-                            Reject
-                        </button>
-
                         <button class="view-btn">
                             View
+                        </button>
+
+                        <button class="download-btn">
+                            Download
                         </button>
 
                     </td>
@@ -209,8 +185,7 @@
 
 </div>
 
-<script src="../js/teacher_registrations.js"></script>
+<script src="../js/teacher_certificates.js"></script>
 
 </body>
-
 </html>

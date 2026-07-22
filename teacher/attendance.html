@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/teacher_attendance.css">
+</head>
+
+<body>
+
+<div class="page-container">
+
+    <!-- Header -->
+
+    <header class="page-header">
+
+        <div>
+            <h1>Attendance Management</h1>
+            <p>Mark and manage student attendance</p>
+        </div>
+
+        <button class="save-btn">
+            Save Attendance
+        </button>
+
+    </header>
+
+    <!-- Controls -->
+
+    <div class="controls">
+
+        <select id="eventSelect">
+            <option>Hackathon</option>
+            <option>Robotics Workshop</option>
+            <option>Technical Quiz</option>
+        </select>
+
+        <input type="text" id="searchInput" placeholder="Search Student...">
+
+    </div>
+
+    <!-- Attendance Table -->
+
+    <section class="attendance-section">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Student Name</th>
+                    <th>USN</th>
+                    <th>Event</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Rahul Kumar</td>
+                    <td>4XX22EC001</td>
+                    <td>Hackathon</td>
+
+                    <td>
+                        <span class="status present">Present</span>
+                    </td>
+
+                    <td>
+                        <button class="toggle-btn">Toggle</button>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Ananya Sharma</td>
+                    <td>4XX22EC002</td>
+                    <td>Hackathon</td>
+
+                    <td>
+                        <span class="status absent">Absent</span>
+                    </td>
+
+                    <td>
+                        <button class="toggle-btn">Toggle</button>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Akash Patil</td>
+                    <td>4XX22EC003</td>
+                    <td>Hackathon</td>
+
+                    <td>
+                        <span class="status present">Present</span>
+                    </td>
+
+                    <td>
+                        <button class="toggle-btn">Toggle</button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- Summary -->
+
+    <div class="summary">
+
+        <div class="summary-card">
+            <h3>Present</h3>
+            <h2 id="presentCount">2</h2>
+        </div>
+
+        <div class="summary-card">
+            <h3>Absent</h3>
+            <h2 id="absentCount">1</h2>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/teacher_attendance.js"></script>
+
+</body>
+</html>
