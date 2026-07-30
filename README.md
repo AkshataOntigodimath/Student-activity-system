@@ -41,35 +41,34 @@ Development Tools
 - Git & GitHub
 
 🏗️ System Modules
-
 Student Activity System
-│
+
 ├── 🔐 Authentication
-│
+
 ├── 👨‍💼 Admin Module
 │   ├── User Management
 │   ├── Activity Management
 │   └── System Management
-│
+
 ├── 👩‍🏫 Teacher Module
 │   ├── Dashboard
 │   ├── Event Management
 │   ├── Registration Management
 │   ├── Attendance
 │   └── Reports
-│
+
 ├── 🎓 Student Module
 │   ├── Dashboard
 │   ├── View Events
 │   ├── Event Registration
 │   └── Activity Tracking
-│
+
 └── 👨‍👩‍👧 Parent Module
     ├── Dashboard
     ├── Student Activity Tracking
     ├── Attendance
     └── Participation Details
-
+    
 💡 Project Objective
 
 The main objective of this project is to digitize student activity management and reduce manual work involved in maintaining event registrations, attendance, participation records, and communication between students, teachers, and parents.
