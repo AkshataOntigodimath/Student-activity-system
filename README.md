@@ -41,6 +41,7 @@ Development Tools
 - Git & GitHub
 
 🏗️ System Modules
+
 Student Activity System
 
 🔐 Authentication
@@ -68,6 +69,7 @@ Student Activity System
 • Student Activity Tracking
 • Attendance
 • Participation Details
+
     
 💡 Project Objective
 
