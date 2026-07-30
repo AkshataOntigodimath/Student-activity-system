@@ -43,31 +43,31 @@ Development Tools
 🏗️ System Modules
 Student Activity System
 
-├── 🔐 Authentication
+🔐 Authentication
 
-├── 👨‍💼 Admin Module
-│   ├── User Management
-│   ├── Activity Management
-│   └── System Management
+👨‍💼 Admin Module
+• User Management
+• Activity Management
+• System Management
 
-├── 👩‍🏫 Teacher Module
-│   ├── Dashboard
-│   ├── Event Management
-│   ├── Registration Management
-│   ├── Attendance
-│   └── Reports
+👩‍🏫 Teacher Module
+• Dashboard
+• Event Management
+• Registration Management
+• Attendance
+• Reports
 
-├── 🎓 Student Module
-│   ├── Dashboard
-│   ├── View Events
-│   ├── Event Registration
-│   └── Activity Tracking
+🎓 Student Module
+• Dashboard
+• View Events
+• Event Registration
+• Activity Tracking
 
-└── 👨‍👩‍👧 Parent Module
-    ├── Dashboard
-    ├── Student Activity Tracking
-    ├── Attendance
-    └── Participation Details
+👨‍👩‍👧 Parent Module
+• Dashboard
+• Student Activity Tracking
+• Attendance
+• Participation Details
     
 💡 Project Objective
 
